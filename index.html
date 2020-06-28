@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="animate.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Prince Porthfolio</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <div class="lgo">
+        <h1>Prince Porthfolio</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#work">My work</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="container main-info-section">
+    <div class="text">
+      <h1>
+
+        <span>H</span>
+        <span class="m-left">i</span>
+        <span class="m-left">,</span>
+        <br>
+        <span>I</span>
+        <span class="m-left">'</span>
+        <span class="m-left">m</span>
+        <span class="name">P</span>
+        <span class="m-left name">r</span>
+        <span class="m-left name">i</span>
+        <span class="m-left name">n</span>
+        <span class="m-left name">c</span>
+        <span class="m-left name">e</span>
+        <span class="m-left">,</span>
+        <br>
+        <span>W</span>
+        <span class="m-left">e</span>
+        <span class="m-left">b</span>
+        <span>D</span>
+        <span class="m-left">e</span>
+        <span class="m-left">v</span>
+        <span class="m-left">l</span>
+        <span class="m-left">o</span>
+        <span class="m-left">p</span>
+        <span class="m-left">e</span>
+        <span class="m-left">r</span>
+        <span class="m-left">.</span>
+
+      </h1>
+      <p>CSS / JavaScript / Html</p>
+      <a href="#contact">Contact me</a>
+    </div>
+    <div class="profile-image">
+      <img src="profile-image.png" alt="">
+    </div>
+  </div>
+
+  <div class="container about" id="about">
+    <h1>About</h1>
+    <div class="about-me-info">
+      <p>Hey! My name is Prince Raj </p><br>
+      <p>Actually i'm a self-taught web developer based in New-Delhi. My main focus has mostly on front-end web development.Some of my skills demonstrated in this portfolio include CSS Grid,Html, Bootstrap4 and JavaScript.</p>
+      <p>I enjoy learning about new technologies and have passion for web-development field, If I'm not working on my laptop then i m busy with my PUBG mission ,listening soft music and scrolling some memes page.Because a coder never take a rest!😜</p>
+    </div>
+    <img src="dotted-shape.png" alt="">
+  </div>
+
+  <div class="container skills" id="skill">
+    <h1>Skills</h1>
+    <p class="skills-info">Decribing my Skill? - Its tough because you are not here to look my boring skills ,so i discribing soft or technical skills only. <br>In my soft one i love writing ,stories and painting, i also creating some memes, skills in cricket also i have because i'm state player&many more.<br>And In my Technical Skills below i mention it:</p>
+    <div class="html">
+      <div class="tag-html">
+        <p>HTML</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-html"></div>
+      </div>
+    </div>
+
+    <div class="html">
+      <div class="tag-css">
+        <p>CSS</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-css"></div>
+      </div>
+    </div>
+
+    <div class="html">
+      <div class="tag-javascript">
+        <p>JavaScript</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-javascript"></div>
+      </div>
+    </div>
+
+    <div class="html">
+      <div class="tag-react">
+        <p>Bootstrap</p>
+      </div>
+      <div class="progressbar">
+        <div class="bar-react"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container work" id="work">
+    <h1>Work</h1>
+    <div class="work-category">
+      <button id="designing" class="active" onclick="showRequiredCategory(this)">Web devloping</button>
+      <button id="animation" onclick="showRequiredCategory(this)">Css animation</button>
+      <button id="project" onclick="showRequiredCategory(this)">Web Project</button>
+    </div>
+
+    <div class="category-designing showCategory">
+      <a href=""><img src="1.png"></a>
+      <a href=""><img src="2.png"></a>
+      <a href=""><img src="3.png"></a>
+      <a href=""><img src="4.png"></a>
+      <a href=""><img src="5.png"></a>
+    </div>
+
+    <div class="category-designing hideCategory">
+      <a href=""><img src="1.png"></a>
+      <a href=""><img src="2.png"></a>
+      <a href=""><img src="3.png"></a>
+      
+    </div>
+
+    <div class="category-project hideCategory">
+      <a href=""><img src="1.png"></a>
+      <a href=""><img src="2.png"></a>
+      <a href=""><img src="3.png"></a>
+      <a href=""><img src="4.png"></a>
+      
+    </div>
+
+  </div>
+
+  <div class="container contact" id="contact">
+    <h1>Contact Me</h1>
+    <form>
+      <input type="text" name="name" placeholder="Full Name">
+      <input type="email" placeholder="Email id">
+      <input type="email" placeholder="PortfolioPersonemail@examaple.com" disabled>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+      <input type="submit">
+    </form>
+  </div>
+
+  <footer>
+    <hr>
+    <p>2020 Copyright.All Rights Reserved.</p>
+  </footer>
+
+
+
+  <script src="ScrollMagic.min.js"></script>
+  <script src="animation.gsap.min.js"></script>
+  <script src="TimelineLite.min.js"></script>
+  <script src="TweenMax.min.js"></script>
+  <script src="CSSPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
